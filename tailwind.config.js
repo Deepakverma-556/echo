@@ -18,7 +18,7 @@ module.exports = {
       },
       backgroundImage: {
         heroBg:"url('./assets/images/webp/hero-bg.webp')"
-      }
+      },
     },
   },
   plugins: [],

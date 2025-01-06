@@ -5,22 +5,24 @@ import { Arrow } from '../utils/icon'
 import Description from '../common/Description'
 
 const Faq = () => {
-  const [active, setActive] = useState()
+  const [active, setActive] = useState(0)
 
   const handleClick = (i) => {
     setActive(active === i ? "" : i)
   }
   return (
-    <div className='bg-darkBlue pb-[356px]'>
-      <div className='max-w-[1054px] mx-auto px-4'>
+    <div id='faq' className='bg-darkBlue pb-[356px] max-lg:pb-48 max-md:pb-24 max-sm:pb-12'>
+      <div id='benefits' className='max-w-[1054px] mx-auto px-4'>
         <Heading text="FAQs" myClass="pb-10 max-sm:pb-6" />
         {FAQ_LIST.map((obj, i) => (
-          <div key={i} onClick={() => handleClick(i)} className={`rounded-xl overflow-hidden max-w-[1022px] bg-opacity-10 mb-6 ${active === i ? "bg-gradient-to-r from-sky to-lightSky" : "bg-white"} p-[1px]`}>
-            <div className='cursor-pointer p-6 max-md:p-4 flex items-center justify-between w-full bg-darkBlue overflow-hidden'>
-              <h2 className='text-xl font-medium leading-6 text-white'>{obj.title}</h2>
+          <div key={i} onClick={() => handleClick(i)} className={`rounded-xl bg-opacity-10 mb-6 ${active === i ? "bg-gradient-to-r from-sky to-lightSky" : "bg-white"} p-[1px]`}>
+            <div className={`cursor-pointer p-6 max-md:p-4 flex items-center justify-between w-full bg-darkBlue rounded-t-xl ${active === i ? "" : "rounded-b-xl"}`}>
+              <h2 className='text-xl font-medium leading-6 text-white pr-4'>{obj.title}</h2>
               <Arrow myClass={`transition-all duration-500 ${active === i ? "rotate-180" : ""}`} />
             </div>
-            <Description text={obj.description} myClass={` px-6 transition-all duration-500 ease-linear bg-darkBlue rounded-b-xl overflow-y-auto ${active === i ? "h-[120px]" : "h-0 opacity-0"}`} />
+            <div className='bg-darkBlue rounded-b-xl'>
+              <Description text={obj.description} myClass={` px-6 transition-all duration-500 ease-linear overflow-y-auto ${active === i ? "h-[120px]" : "h-0 opacity-0"}`} />
+            </div>
           </div>
         ))}
       </div>

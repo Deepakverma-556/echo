@@ -36,9 +36,9 @@ const Testimonials = () => {
     ]
   };
   return (
-    <div className='pt-[175px] bg-darkBlue pb-[210px] max-md:py-24 max-sm:py-12'>
-      <div className='max-w-[1172px] mx-auto px-4'>
-        <Heading text="Testimonials" myClass="pb-10 max-sm:pb-6"/>
+    <div id='testimonials' className='pt-[175px] bg-darkBlue pb-[210px] max-md:py-24 max-sm:pt-6 max-sm:pb-12'>
+      <div id='solution' className='max-w-[1172px] mx-auto px-4'>
+        <Heading text="Testimonials" myClass="pb-10 max-sm:pb-6" />
         <div>
           <Slider {...settings}>
             {TESTIMONIALS_LIST.map((obj, i) => (
@@ -48,7 +48,7 @@ const Testimonials = () => {
                   <Description text={obj.description} myClass="pt-[8.39px] max-md:pb-8 max-[500px]:pb-0" />
                 </div>
                 <div className='flex items-center gap-2'>
-                  <img src={obj.image} alt="" className='h-[60px] max-sm:h-10' />
+                  <img src={obj.image} alt={obj.imageAlt} className='h-[60px] max-sm:h-10' />
                   <div>
                     <p className='font-medium text-xl leading-6 text-white max-sm:text-base max-sm:leading-4'>{obj.name}</p>
                     <Description text={obj.position} myClass="max-sm:!text-[10px]" />
