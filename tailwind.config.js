@@ -9,14 +9,15 @@ module.exports = {
         lg: "1025px",
         md: "770px"
       },
-      fontFamily: {
-        outfit: ["outfit", "sans-serif"]
-      },
       colors: {
         sky: "#3a3ef5",
         lightSky: "#32c8f1",
         darkBlue: "#01000b",
         lightBlue: "#3b28f6",
+        darkSky:"#0c0838"
+      },
+      backgroundImage: {
+        heroBg:"url('./assets/images/webp/hero-bg.webp')"
       }
     },
   },
