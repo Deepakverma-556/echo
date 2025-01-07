@@ -18,7 +18,7 @@ const Hero = () => {
           </div>
           <img src={hero} alt="hero" className='h-[476px] max-lg:h-96 object-cover max-md:mx-auto max-md:mt-3' />
         </div>
-        <img src={ball} alt="ball" className='absolute -left-[31%] -bottom-[37%] h-[600px] object-cover max-sm:hidden' />
+        <img src={ball} alt="ball" className='absolute -left-[31%] -bottom-[37%] h-[600px] object-cover max-md:hidden' />
       </div>
     </div>
   )

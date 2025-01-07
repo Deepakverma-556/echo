@@ -26,7 +26,7 @@ const Header = () => {
         <a href="#logo"><img src={logo} alt="logo" className='h-[72px] max-lg:h-10 pointer-events-none' /></a>
         <ul className='flex items-center gap-8 max-md:hidden max-lg:gap-6'>
           {HEADER_LIST.map((obj, i) => (
-            <li key={i}><a href={obj.titleHref} className='text-base leading-5 text-white transition-all duration-300 hover:text-sky'>{obj.title}</a></li>
+            <li key={i}><a href={obj.link} className='text-base leading-5 text-white transition-all duration-300 hover:text-lightSky'>{obj.title}</a></li>
           ))}
         </ul>
         <CustomButton text="Get Started" myClass="py-[13.5px] px-[32.48px] max-md:hidden" />
@@ -44,7 +44,7 @@ const Header = () => {
         }`}>
         <ul className='flex flex-col items-center gap-8'>
           {HEADER_LIST.map((obj, i) => (
-            <li key={i}><a onClick={() => setOpen(false)} href={obj.titleHref} className='text-base leading-5 text-white'>{obj.title}</a></li>
+            <li key={i}><a onClick={() => setOpen(false)} href={obj.link} className='text-base leading-5 text-white'>{obj.title}</a></li>
           ))}
           <CustomButton customOnClick={() => setOpen(false)} text="Get Started" myClass="py-[13.5px] px-[32.48px]" />
         </ul>

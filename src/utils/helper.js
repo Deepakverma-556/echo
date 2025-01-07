@@ -1,28 +1,28 @@
 import miguel from "../assets/images/webp/miguel.webp"
 import rachel from "../assets/images/webp/rachel.webp"
 import mike from "../assets/images/webp/mike.webp"
-import { Facebook, Instagram, Linkedin } from "./icon"
+import { Facebook, Instagram, Linkedin } from "./icons"
 
 export const HEADER_LIST = [
     {
         title: "About us",
-        titleHref: "#about",
+        link: "#about",
     },
     {
         title: "Solutions",
-        titleHref: "#solution",
+        link: "#solution",
     },
     {
         title: "Benefits",
-        titleHref: "#benefits",
+        link: "#benefits",
     },
     {
         title: "Testimonials",
-        titleHref: "#testimonials",
+        link: "#testimonials",
     },
     {
         title: "FAQs",
-        titleHref: "#faq",
+        link: "#faq",
     },
 ]
 
@@ -51,7 +51,7 @@ export const TESTIMONIALS_LIST = [
         imageAlt: "miguel"
     },
     {
-        title: "Huge Potential!",
+        title: "Game Changer!",
         description: "“ECHO AI has really revolutionized our operations. My team never has to chase down resources anymore—it’s all instantly accessible, streamlining our workflow and freeing up time.”",
         image: rachel,
         name: "Rachel Lettice,",
@@ -93,15 +93,15 @@ export const FAQ_LIST = [
 
 export const SOCIAL_MEDIA_LIST = [
     {
-        myHref: "www.linkedin.com",
-        logo: <Linkedin />,
+        link: "https://www.linkedin.com/",
+        icon: <Linkedin />,
     },
     {
-        myHref: "www.instagram.com",
-        logo: <Instagram />,
+        link: "https://www.instagram.com/",
+        icon: <Instagram />,
     },
     {
-        myHref: "www.facebook.com",
-        logo: <Facebook />
+        link: "https://www.facebook.com/",
+        icon: <Facebook />
     },
 ]

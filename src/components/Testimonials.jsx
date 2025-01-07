@@ -29,6 +29,13 @@ const Testimonials = () => {
       {
         breakpoint: 770,
         settings: {
+          slidesToShow: 2,
+          centerMode: false,
+        }
+      },
+      {
+        breakpoint: 640,
+        settings: {
           slidesToShow: 1,
           centerMode: true,
         }
@@ -42,10 +49,10 @@ const Testimonials = () => {
         <div>
           <Slider {...settings}>
             {TESTIMONIALS_LIST.map((obj, i) => (
-              <div key={i} className='bg-gradient-to-b from-darkSky rounded-3xl px-6 pt-6 max-[500px]:h-[264px] md:h-[289px] max-sm:px-4 max-sm:pt-4 !flex flex-col justify-between'>
+              <div key={i} className='bg-gradient-to-b from-darkSky rounded-3xl px-6 pt-6 max-[500px]:h-[264px] sm:h-[289px] max-sm:px-4 max-sm:pt-4 !flex flex-col justify-between'>
                 <div>
                   <SubHeading text={obj.title} />
-                  <Description text={obj.description} myClass="pt-[8.39px] max-md:pb-8 max-[500px]:pb-0" />
+                  <Description text={obj.description} myClass="pt-[8.39px] max-sm:pb-8 max-[500px]:pb-0" />
                 </div>
                 <div className='flex items-center gap-2'>
                   <img src={obj.image} alt={obj.imageAlt} className='h-[60px] max-sm:h-10' />
