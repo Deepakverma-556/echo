@@ -12,7 +12,7 @@ const Footer = () => {
       <div className='max-w-[1172px] mx-auto px-4'>
         <div className='flex items-start sm:justify-between pb-[60px] max-sm:pb-8 max-sm:flex-wrap'>
           <div className='max-sm:w-full'>
-            <a href="#footer-logo"><img src={footerLogo} alt="footer-logo" className='h-[190px] max-md:h-32 max-sm:h-24 max-sm:mx-auto' /></a>
+            <a href="#footer-logo"><img src={footerLogo} alt="footer-logo" className='h-[190px] max-md:h-32 max-sm:h-24 max-sm:mx-auto pointer-events-none' /></a>
           </div>
           <ul className='flex flex-col gap-[14px] max-md:gap-2 max-sm:pt-6 max-sm:text-center max-sm:w-1/2'>
             <li className='text-base leading-5 text-white'>Quick Links</li>
