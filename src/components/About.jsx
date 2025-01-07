@@ -9,7 +9,7 @@ const About = () => {
       <div className='max-w-[1170px] px-4 mx-auto'>
         <div className='flex max-md:flex-wrap text-center'>
           {ABOUT_LIST.map((obj, i) => (
-            <div key={i} className={`px-[96px] max-lg:px-16 bg-darkBlue max-md:pb-6 max-md:mx-auto ${i === 2 ? "" : ""}`}>
+            <div key={i} className={`px-[96px] max-lg:px-16 bg-darkBlue max-md:pb-6 max-md:mx-auto ${i === 2 ? "" : "md:relative after:absolute after:content-'' after:h-full after:w-[0.5px] after:bg-gradient-to-b after:from-white after:to-darkBlue after:top-0 after:right-0"}`}>
               <Heading text={obj.title} myClass="pb-2 max-md:pb-1 max-sm:!text-3xl" />
               <Description text={obj.description} />
             </div>
